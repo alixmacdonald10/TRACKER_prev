@@ -6,10 +6,12 @@ import numpy as np
 
 class background():
     
+        
     def __init__(
         self, width, height, channels, 
         background_mean, background_variance=1
     ):
+
         self.width = width
         self.height = height
         self.channels = channels
@@ -32,6 +34,7 @@ class background():
   
   
     def add_noise(self):
+        
         '''
         Adds random gaussian distributed noise to the blank image.
         - mean: mean of distribution
